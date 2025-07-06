@@ -1,10 +1,10 @@
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import pickle
 
-url = "https://raw.githubusercontent.com/nikhilroxtomar/Heart-Disease-Prediction/main/dataset.csv"
-data = pd.read_csv(url)
+data = pd.read_csv("heart.csv")
 
 X = data.drop('target', axis=1)
 y = data['target']
@@ -16,3 +16,5 @@ model.fit(X_train, y_train)
 
 with open('model/heart_model.pkl', 'wb') as f:
     pickle.dump(model, f)
+
+print("Model trained and saved to model/heart_model.pkl")

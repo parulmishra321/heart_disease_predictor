@@ -1,12 +1,19 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h2>Prediction Result:</h2>
-    <p>{{ result }}</p>
-    <a href="/">Go back</a>
+    <form>
+        <h2>Prediction Result</h2>
+        <p style="text-align: center; font-size: 1.1rem; color: #f0f0f0;">{{ result }}</p>
+        <input
+            type="button"
+            value="Go Back"
+            onclick="window.location.href='/'"
+            style="margin-top: 20px;"
+        >
+    </form>
 </body>
 </html>
