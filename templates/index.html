@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h2>Enter Patient Data</h2>
+    <form action="/predict" method="post">
+        {% for feature in ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs',
+                           'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal'] %}
+            <label>{{ feature }}:</label>
+            <input type="text" name="{{ feature }}"><br>
+        {% endfor %}
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
