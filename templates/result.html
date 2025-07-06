@@ -5,15 +5,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <form>
-        <h2>Prediction Result</h2>
-        <p style="text-align: center; font-size: 1.1rem; color: #f0f0f0;">{{ result }}</p>
-        <input
-            type="button"
-            value="Go Back"
-            onclick="window.location.href='/'"
-            style="margin-top: 20px;"
-        >
-    </form>
+    <h2>Prediction Result:</h2>
+    <div class="result">{{ result }}</div>
+    <a href="/">🔙 Go back</a>
 </body>
 </html>

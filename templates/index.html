@@ -7,47 +7,41 @@
 </head>
 <body>
     <h1>Enter Patient Information</h1>
-    <form method="POST" action="/predict">
-        <label for="age">Age</label>
-        <input type="number" step="any" name="age" required>
+   <form method="POST" action="/predict">
+    <label>Age</label>
+    <input type="number" name="Age" required>
 
-        <label for="sex">Sex (1 = Male, 0 = Female)</label>
-        <input type="number" name="sex" required>
+    <label>Sex</label>
+    <input type="number" name="Sex" required>
 
-        <label for="cp">Chest Pain Type (0–3)</label>
-        <input type="number" name="cp" required>
+    <label>Chest Pain Type</label>
+    <input type="number" name="ChestPainType" required>
 
-        <label for="trestbps">Resting Blood Pressure</label>
-        <input type="number" name="trestbps" required>
+    <label>Resting Blood Pressure</label>
+    <input type="number" name="RestingBP" required>
 
-        <label for="chol">Cholesterol (mg/dL)</label>
-        <input type="number" name="chol" required>
+    <label>Cholesterol</label>
+    <input type="number" name="Cholesterol" required>
 
-        <label for="fbs">Fasting Blood Sugar > 120 mg/dL (1 = True; 0 = False)</label>
-        <input type="number" name="fbs" required>
+    <label>Fasting Blood Sugar</label>
+    <input type="number" name="FastingBS" required>
 
-        <label for="restecg">Resting ECG Results (0–2)</label>
-        <input type="number" name="restecg" required>
+    <label>Resting ECG</label>
+    <input type="number" name="RestingECG" required>
 
-        <label for="thalach">Maximum Heart Rate Achieved</label>
-        <input type="number" name="thalach" required>
+    <label>Max Heart Rate</label>
+    <input type="number" name="MaxHR" required>
 
-        <label for="exang">Exercise Induced Angina (1 = Yes; 0 = No)</label>
-        <input type="number" name="exang" required>
+    <label>Exercise Induced Angina</label>
+    <input type="number" name="ExerciseAngina" required>
 
-        <label for="oldpeak">ST Depression</label>
-        <input type="number" step="any" name="oldpeak" required>
+    <label>Oldpeak</label>
+    <input type="number" name="Oldpeak" step="any" required>
 
-        <label for="slope">Slope of ST Segment (0–2)</label>
-        <input type="number" name="slope" required>
+    <label>Slope of ST Segment</label>
+    <input type="number" name="ST_Slope" required>
 
-        <label for="ca">Number of Major Vessels (0–3)</label>
-        <input type="number" name="ca" required>
-
-        <label for="thal">Thalassemia (1 = Normal; 2 = Fixed Defect; 3 = Reversible)</label>
-        <input type="number" name="thal" required>
-
-        <input type="submit" value="Predict Risk">
-    </form>
+    <input type="submit" value="Predict">
+   </form>
 </body>
 </html>

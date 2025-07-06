@@ -1,13 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0e0e0e;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     padding: 40px 20px;
 }
 
@@ -18,10 +17,10 @@ h1, h2 {
 }
 
 form {
-    background-color: #1a1a1a;
+    background-color: #1f1f1f;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
     width: 100%;
     max-width: 600px;
 }
@@ -40,7 +39,7 @@ input[type="number"], input[type="text"] {
     margin-top: 5px;
     border-radius: 8px;
     background-color: #333;
-    color: #ffffff;
+    color: #fff;
     font-size: 16px;
 }
 
@@ -71,4 +70,11 @@ input[type="submit"]:hover {
     box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
     text-align: center;
     color: #00e0ff;
+}
+
+a {
+    margin-top: 20px;
+    color: #00e0ff;
+    text-decoration: none;
+    font-weight: bold;
 }
